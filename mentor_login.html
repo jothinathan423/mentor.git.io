@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <title>Mentor Login</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.php">SESTA Register</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="studentlogin.php">Student Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mentor_login.html">Mentor Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="studentregister.php">Student Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout.php">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <center>
+        <h1 class="mt-5">Mentor Login</h1>
+    </center>
+        <form action="mentor_login.php" method="post">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <center>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </center>
+
+        </form>
+    </div>
+</body>
+</html>
